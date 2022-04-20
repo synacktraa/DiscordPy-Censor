@@ -5,7 +5,7 @@ from discord.ext import commands
 from censor import censor
 
 
-TOKEN = "OTAxNDU4MTkyMDg3Nzc3MzIw.YXQKXQ.Bxbh6rViIAehJiTpL2mnYF6l-1A"
+TOKEN = "YOUR_GITHUB_TOKEN"
 
 intents = discord.Intents().default()
 intents.members = True #setting the discord intents for members to true
