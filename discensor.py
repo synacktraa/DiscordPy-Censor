@@ -21,8 +21,7 @@ def censor(msg):
     vowels = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U']
     for pattern in lists.CENSORED:
         if pattern in msg.lower():
-            idx = msg.lower().find(pattern)
-            rev_data = msg[idx:idx+len(pattern)]
+            rev_data = pattern
             for char in rev_data:
                 for v in vowels:
                     if char == v:
@@ -30,4 +29,3 @@ def censor(msg):
                         rev_data = rev_data.replace(char, '\*') 
             msg = ireplace(msg, pattern, rev_data)
     return msg
-
